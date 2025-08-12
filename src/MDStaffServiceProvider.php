@@ -2,9 +2,9 @@
 
 namespace ChrisReedIO\MDStaff;
 
+use ChrisReedIO\MDStaff\Commands\MDStaffCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use ChrisReedIO\MDStaff\Commands\MDStaffCommand;
 
 class MDStaffServiceProvider extends PackageServiceProvider
 {
