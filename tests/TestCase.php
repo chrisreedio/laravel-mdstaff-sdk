@@ -2,9 +2,9 @@
 
 namespace ChrisReedIO\MDStaff\Tests;
 
+use ChrisReedIO\MDStaff\MDStaffServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use ChrisReedIO\MDStaff\MDStaffServiceProvider;
 
 class TestCase extends Orchestra
 {
