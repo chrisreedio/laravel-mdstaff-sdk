@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace ChrisReedIO\MDStaff\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class MDStaffCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-mdstaff-sdk';
 
     public $description = 'My command';
 
