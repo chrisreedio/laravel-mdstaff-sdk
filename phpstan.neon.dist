@@ -5,8 +5,14 @@ parameters:
     level: 5
     paths:
         - src
-        - config
-        - database
     tmpDir: build/phpstan
     checkOctaneCompatibility: true
     checkModelProperties: true
+    treatPhpDocTypesAsCertain: false
+    ignoreErrors:
+        # The rate-limit plugin documents its response handler as callable(): mixed,
+        # but invokes it with the Response and the Limit.
+        -
+            identifier: argument.type
+            message: '#Saloon\\RateLimitPlugin\\Limit constructor#'
+            path: src/MDStaffConnector.php

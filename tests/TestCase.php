@@ -3,20 +3,10 @@
 namespace ChrisReedIO\MDStaff\Tests;
 
 use ChrisReedIO\MDStaff\MDStaffServiceProvider;
-use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {
-    protected function setUp(): void
-    {
-        parent::setUp();
-
-        Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'ChrisReedIO\\MDStaff\\Database\\Factories\\'.class_basename($modelName).'Factory'
-        );
-    }
-
     protected function getPackageProviders($app)
     {
         return [
@@ -26,12 +16,12 @@ class TestCase extends Orchestra
 
     public function getEnvironmentSetUp($app)
     {
-        config()->set('database.default', 'testing');
-
-        /*
-         foreach (\Illuminate\Support\Facades\File::allFiles(__DIR__ . '/database/migrations') as $migration) {
-            (include $migration->getRealPath())->up();
-         }
-         */
+        config()->set('cache.default', 'array');
+        config()->set('mdstaff-sdk.base_url', 'api.asm-cloud.com');
+        config()->set('mdstaff-sdk.account_code', 'example');
+        config()->set('mdstaff-sdk.facility_id', 'facility-id');
+        config()->set('mdstaff-sdk.auth.default', 'basic');
+        config()->set('mdstaff-sdk.auth.basic.username', 'username');
+        config()->set('mdstaff-sdk.auth.basic.password', 'password');
     }
 }
