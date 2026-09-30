@@ -2,6 +2,18 @@
 
 All notable changes to `laravel-mdstaff-sdk` will be documented in this file.
 
+## v1.0.0 - 2026-09-30
+
+### What's Changed
+
+* Bump dependabot/fetch-metadata from 2.4.0 to 2.5.0 by @dependabot[bot] in https://github.com/chrisreedio/laravel-mdstaff-sdk/pull/5
+
+### New Contributors
+
+* @dependabot[bot] made their first contribution in https://github.com/chrisreedio/laravel-mdstaff-sdk/pull/5
+
+**Full Changelog**: https://github.com/chrisreedio/laravel-mdstaff-sdk/commits/v1.0.0
+
 ## Unreleased
 
 - Extracted the MDStaff connector, query/facility/provider-file requests, and query paginator from the Springfield Clinic website backend.
