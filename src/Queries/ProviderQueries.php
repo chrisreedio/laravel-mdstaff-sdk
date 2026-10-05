@@ -37,7 +37,7 @@ final class ProviderQueries
             QuerySource::Demographic => [
                 'ProviderID', 'FirstName', 'LastName', 'FormalNameWithDegree',
                 'FormattedNameWithDegree', 'AcceptNewPatient', 'NPI', 'GenderID.Code',
-                'CellPhone', 'LastUpdated',
+                'CellPhone', 'Email', 'LastUpdated',
                 'LanguageID_1', 'LanguageID_1.Description', 'LanguageID_2', 'LanguageID_2.Description',
                 'LanguageID_3', 'LanguageID_3.Description', 'LanguageID_4', 'LanguageID_4.Description',
                 'LanguageID_5', 'LanguageID_5.Description',
