@@ -51,7 +51,8 @@ final class ProviderQueries
                 'DepartmentID_3', 'DepartmentID_3.Description', 'LastUpdated',
             ],
             QuerySource::Address => [
-                'AddressID', 'ProviderID', 'AddressType', 'Location', 'Address', 'Address2', 'City',
+                'AddressID', 'ProviderID', 'AddressType', 'MedicalGroupID', 'MedicalGroupID.Name',
+                'Location', 'Address', 'Address2', 'City',
                 'State', 'Zip', 'Telephone', 'Fax', 'InUse', 'Publish', 'LastUpdated',
                 'MondayHoursFrom', 'MondayHoursTo', 'TuesdayHoursFrom', 'TuesdayHoursTo',
                 'WednesdayHoursFrom', 'WednesdayHoursTo', 'ThursdayHoursFrom', 'ThursdayHoursTo',
