@@ -2,6 +2,15 @@
 
 All notable changes to `laravel-mdstaff-sdk` will be documented in this file.
 
+## v1.1.0 - 2026-10-05
+
+### What's Changed
+
+* Bump stefanzweifel/git-auto-commit-action from 5 to 7 by @dependabot[bot] in https://github.com/chrisreedio/laravel-mdstaff-sdk/pull/3
+* Added email to demographics query.
+
+**Full Changelog**: https://github.com/chrisreedio/laravel-mdstaff-sdk/compare/v1.0.0...v1.1.0
+
 ## v1.0.0 - 2026-09-30
 
 ### What's Changed
